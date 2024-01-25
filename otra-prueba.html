@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="otra-p.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+          background-color: #444; /* Cambia el color de fondo */
+          background-image: url('img/Captura de pantalla 2024-01-25 163534.png'); 
+          background-size: cover;
+          background-position: center;
+          height: 100vh; /* Ajusta la altura al 100% del viewport */
+          margin: 0; /* Elimina el margen predeterminado del cuerpo */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+    
+        .card {
+          background-color: rgba(123, 246, 135, 0.8); /* Agrega un fondo semitransparente a la tarjeta */
+          padding: 20px;
+          border-radius: 10px;
+        }
+      </style>
+    </head>
+    
+    <body>
+      <div class="container">
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="text-center">Iniciar Sesión</h3>
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label for="username">Usuario:</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                  </div>
+                  <button type="button" class="btn btn-primary btn-block" onclick="login()">Iniciar Sesión</button>
+                  <div class="mt-3 text-center">
+                    <a href="#" onclick="forgotPassword()">¿Olvidó su contraseña?</a>
+                  </div>
+                  <div class="mt-2 text-center">
+                    <a href="#" onclick="register()">¿No está registrado? Regístrese</a>
+                  </div>
+                  <div class="mt-2 text-center">
+                    <a href="#" onclick="adminLogin()">¿Es administrador? Ingresar perfil administrador</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      
+      <script>
+        function login() {
+          var username = document.getElementById('username').value;
+          var password = document.getElementById('password').value;
+    
+          // Aquí puedes realizar la lógica de autenticación, por ejemplo, enviar los datos al servidor.
+          // Este es solo un ejemplo básico del lado del cliente.
+          if (username === 'usuario' && password === 'contraseña') {
+            alert('Inicio de sesión exitoso!');
+          } else {
+            alert('Nombre de usuario o contraseña incorrectos. Vuelve a intentarlo.');
+          }
+        }
+    
+        function forgotPassword() {
+          // Implementa la lógica para recuperar contraseña, por ejemplo, enviar un correo electrónico.
+          alert('Funcionalidad de recuperación de contraseña no implementada.');
+        }
+    
+        function register() {
+          // Implementa la lógica para redirigir a la página de registro.
+          alert('Redirigir a la página de registro.');
+        }
+    
+        function adminLogin() {
+          // Implementa la lógica para el inicio de sesión del administrador.
+          alert('Funcionalidad de inicio de sesión del administrador no implementada.');
+        }
+      </script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+    
+    </html>
