@@ -10,14 +10,15 @@ body{
   rgb(97, 255, 161) 50.1% 66.8%,
   rgb(73, 182, 230) 66.8% 83.5%,
   rgb(2, 237, 202) 83.5% 100% */
-  #D75E24 16.7%,
-  #E68E0C 16.7% 33.4%,
-  #769E33 33.4% 50.1%,
+  #f56524 16.7%,
+  #fca227 16.7% 33.4%,
+  #cac600 33.4% 50.1%,
   #009A88 50.1% 66.8%,
-  #5FB9D3 66.8% 83.5%,
-  #0192D0 83.5% 100%
-);
+  #58b3b0 66.8% 83.5%,
+  #0088d4 83.5% 100%
 
+  
+);
 }
 
 .titulo{
@@ -28,8 +29,8 @@ body{
   width: 55%;
 }
 .formulario {
-  background-color: rgba(255, 255, 255, 0.6);
-  border-top: 10%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-top: 10px;
   padding: 20px;
   border-radius: 10px;
   display: flex;
@@ -38,8 +39,9 @@ body{
   align-content: center;
   flex-direction: column;
   margin-top: 5%;
-  margin-left: 22%;
-  margin-right: 22%;
+  margin-left: 49%;
+  margin-right: 1.8%;
+  
   
   
   
