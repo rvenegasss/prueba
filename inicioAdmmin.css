@@ -1,0 +1,87 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas, cada una con igual anchura */
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .left-side {
+    background-color: #009A88 ;
+    color: black;
+    padding-left: 38%;
+    padding-right: 38%;
+    padding-top: 5%;
+  }
+  
+  .d-flex {
+    background-origin: 100%;
+  }
+  .fondo-flex-fill {
+    background-origin: 20px;
+  }
+  
+  .formulario {
+    background-color: rgba(241, 175, 175, 0.9);
+    
+    border-radius: 10px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-block-end: 10%;
+    padding: 20%;
+   
+  }
+  .aaaa{
+    margin-top: 10%;
+    width: 200px;
+    height: 50px;
+    margin-left:30%;
+    margin-right:30% ;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    
+
+  }
+  input{
+    margin-right: 3500px;
+    margin-left: 3500px;
+    border-radius: 5%;
+    
+  }
+  .imagen2 {
+    height:200% ;
+    width: 200%;
+    margin-left: -50%;
+  }
+  .imagen1 {
+    height: 70%;
+    width: 90%;
+    margin-left: 10%;
+  }
+  .logo{
+    height: 70px;
+    width: 100px;
+  }
+  .btn{
+    font-size: 14px;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 10px 30px;
+    border: solid #e8e8e8 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 45%;
+    transition : 599ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    }
