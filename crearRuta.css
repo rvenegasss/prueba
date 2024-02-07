@@ -415,23 +415,30 @@ body {
 }
 /*main*/
 #video {
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-left: 90px;
 }
 
 .btn-container {
     margin-top: 10px;
+    margin-left: 180px;
+}
+#h5 {
+    margin-left: 50px;
 }
 
 #todo {
-    margin: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
     background-color: #f0f0f0; 
-    padding: 10px; 
+    padding: 50px; 
+    margin-bottom: 30px;
+    
+}
+#img {
+    margin-left: 200px;
 }
 
-#h4 {
-    margin-top: 10px;
-    margin-left: 10px;
-}
 
 #subirCurso {
     color: #009A88;
@@ -441,6 +448,7 @@ body {
 
 #botonSubirCurso {
     color:white;
+    align-items: center;
 }
 
 /*Footer*/
