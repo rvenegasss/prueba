@@ -532,3 +532,11 @@ body, .navbar-brand, .form-label, .form-control, .btn, .text-center {
     font-style: normal;
     font-weight: 10; /* Poppins Medium */
 }
+.container {
+    display: flex;
+    align-items: center;
+}
+
+#textInput {
+    display: none;
+}

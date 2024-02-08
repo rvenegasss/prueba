@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Input</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        #textInput {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Texto: <span id="displayText">Este es un texto de ejemplo</span></p>
+        <button onclick="toggleInput()">Editar</button>
+        <input type="text" id="textInput">
+    </div>
+
+    <script>
+        function toggleInput() {
+            var textDisplay = document.getElementById("displayText");
+            var textInput = document.getElementById("textInput");
+
+            if (textInput.style.display === "none") {
+                textInput.style.display = "inline";
+                textInput.value = textDisplay.textContent;
+                textDisplay.style.display = "none";
+            } else {
+                textInput.style.display = "none";
+                textDisplay.style.display = "inline";
+                textDisplay.textContent = textInput.value;
+            }
+        }
+    </script>
+</body>
+
+</html>

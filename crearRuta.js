@@ -57,3 +57,18 @@ body.addEventListener("click" , e =>{
     document.querySelector('.close-button').addEventListener('click', () => {
         selectNav.classList.remove('visiblenav');
     });
+
+    function toggleInput() {
+        var textDisplay = document.getElementById("displayText");
+        var textInput = document.getElementById("textInput");
+
+        if (textInput.style.display === "none") {
+            textInput.style.display = "inline";
+            textInput.value = textDisplay.textContent;
+            textDisplay.style.display = "none";
+        } else {
+            textInput.style.display = "none";
+            textDisplay.style.display = "inline";
+            textDisplay.textContent = textInput.value;
+        }
+    }
